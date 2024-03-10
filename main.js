@@ -39,3 +39,25 @@ videoBtn.forEach(btn =>{
         document.querySelector('#video-solid').src = src;
     });
 });
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+
+    },
+    breakpoint:{
+        640:{
+            slidesPerviews: 1,
+        },
+        760:{
+            slidesPerviews:2,
+        },
+        1024:{
+            slidesPerviews:3,
+        },
+
+    }
+});
