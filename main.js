@@ -61,3 +61,28 @@ var swiper = new Swiper(".review-slider", {
 
     }
 });
+
+var swiper = new Swiper(".brand-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+
+    },
+    breakpoint:{
+        450:{
+            slidesPerviews: 2,
+        },
+        768:{
+            slidesPerviews: 3,
+        },
+        991:{
+            slidesPerviews: 4,
+        },
+        1200:{
+            slidesPerviews: 5,
+        },
+
+    }
+});
